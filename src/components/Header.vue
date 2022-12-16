@@ -1,4 +1,6 @@
 <script setup>
+import SocialButton from "./SocialButton.vue";
+
 defineProps({
   name: String,
   title: String,
@@ -17,16 +19,18 @@ defineProps({
   <h1 class="name">{{ name }}</h1>
   <p class="title">{{ title }}</p>
   <div class="buttons">
-    <button class="email" type="button">
-      <i class="far fa-envelope"></i>
-      Email
-    </button>
-    <a href="https://www.linkedin.com/in/glauciellec/">
-      <button class="linkedin" type="button">
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
-      </button>
-    </a>
+    <SocialButton
+      href="mailto:glauciellec@gmail.com"
+      class="mail"
+      icon="far fa-envelope"
+      buttonName="Email"
+    />
+    <SocialButton
+      href="https://www.linkedin.com/in/glauciellec/"
+      class="linkedin"
+      icon="fa-brands fa-linkedin"
+      buttonName="LinkedIn"
+    />
   </div>
 </template>
 
@@ -48,16 +52,9 @@ img {
 }
 
 .buttons {
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.linkedin {
-  background-color: #5093e2;
-  color: #fff;
-}
-.GlauImg:hover {
-  filter: drop-shadow(0 0 2em #9e9e9eaa);
 }
 </style>

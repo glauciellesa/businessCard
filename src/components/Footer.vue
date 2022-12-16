@@ -20,11 +20,12 @@ import { ref } from "vue";
 .footer {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #161619;
   gap: 10px;
 }
 a {
   color: #d2d2d2;
+  font-size: 20px;
 }
 </style>
