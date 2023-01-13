@@ -1,4 +1,4 @@
-# BusinessCar
+# BusinessCard
 
 This is a personal project made to learn Vue 3 + Vite
 
